@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cheese Survey Form</title>
+</head>
+<body>
+
+<div class="container">
+<h1 id="title">Cheese Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve our selections</p>
+
+
+<form id="survey-form">
+  <div class="form-group">
+  <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          /> </div>
+   <div class="form-group">       
+    <label id="email-label" for="email">Email</label>
+     <input 
+          type="email" 
+          name="email" 
+          id="email"
+          class="form-control"
+          placeholder="Enter your email"
+          required
+          />
+          </div>
+  <div class="form-group">
+    <label id="number-label" for="number">Age</label>
+    <input type="number"
+          name="age"
+          id="number"
+          min="1"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+         required
+    /> </div>
+<div class="form-group">
+  <p>Which option best describes your current love of cheese?</p>
+  <select id="dropdown" name="love" class="form control" required>
+    <option disabled selected value>Select current love</option>
+    <option value="meh">meh</option>
+    <option value="purdy gud">purdy gud</option>
+    <option value="NOM">NOM</option>
+    </select>
+    </div>
+<div class="form-group">
+  <p>Would you recommend cheese to a friend?</p>
+  <label>
+    <input name="user-recommend"
+           value="definitely"
+           type="radio"
+           class="input-radio"
+           checked>Hell yeah</label>
+    <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />I guess</label
+          >
+<label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Ummm...</label
+          >
+        </div>
+
+<div class="form-group">
+          <p>
+            Which cheeses do you like?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="cheddar"
+              type="checkbox"
+              class="input-checkbox"
+            />Cheddar</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="provolone"
+              type="checkbox"
+              class="input-checkbox"
+            />Provolone</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="swiss"
+              type="checkbox"
+              class="input-checkbox"
+            />Swiss</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Gouda"
+              type="checkbox"
+              class="input-checkbox"
+            />Gouda</label
+          >
+</div>
+<div class="form-group">
+          <p>Any cheesy comments?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+
+          
+          </form>
+
+</body>
+</html>
+  
